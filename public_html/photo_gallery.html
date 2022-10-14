@@ -1,0 +1,145 @@
+<!Documenttype.html>
+<html>
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css.css">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@800&family=Poppins:ital,wght@0,300;1,100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@800&family=Poppins:ital,wght@0,300;1,100&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <title>Empowering the nation</title>
+    </head>
+	
+
+	<div class="wrapper">
+		<nav>
+			<ul>
+				<li><a href="Homepage.html"><i class="fa fa-home">Home page</a></li></i>
+
+				<li><a href="Six-week.html"><i class="fa fa-book"></i>Six-week courses</a></li>
+						<div class="sub-menu-1">
+							<ul>
+								<li><a href="Child_Minding.html">Child Minding</li>
+								<li><a href="Cooking.html">Cooking</li>
+								<li><a href="Garden_Maintenance.html">Garden Maintenance</li>
+							</ul>
+
+						</div>
+
+				<li><a href="Six-month.html"><i class="fa fa-book"></i>Six-month courses</a></li>
+				<div class="sub-menu-2">
+					<ul>
+						<li><a href="First_Aid.html">First Aid</li>
+						<li><a href="Sewing.html">Sewing</li>
+						<li><a href="Landscaping.html">Landscaping</li>
+						<li><a href="Life_Skills.html">Life Skills</li>
+					</ul>
+				</div>
+
+				<li><a href="Billingdetails.html"><i class="fa fa-money"></i>Billing details</a></li>
+				<li><a href="Contact_us.html"><i class="fa fa-address-book"></i>Contact details</a></li>
+				<li><a href="Photo_gallery.html"><i class="fa fa-picture-o"></i>Photo gallery</a></li>
+
+			</ul>
+
+
+		</nav><!--end of nav bar-->
+				</div>
+	
+			<body>
+			
+			<h1 style="text-align:center">Gallery</h1>
+			
+			<div class="imgcontainer">
+			  <div class="mySlides">
+				<div class="numbertext">1 / 5</div>
+				<img src="images/staff1.jpg" style="width:80%">
+			  </div>
+			
+			  <div class="mySlides">
+				<div class="numbertext">2 / 5</div>
+				<img src="images/staff2.jpg" style="width:80%">
+			  </div>
+			
+			  <div class="mySlides">
+				<div class="numbertext">3 / 5</div>
+				<img src="images/Donate1.jpg" style="width:80%">
+			  </div>
+				
+			  <div class="mySlides">
+				<div class="numbertext">4 / 5</div>
+				<img src="images/staff4.jpg" style="width:80%">
+			  </div>
+			
+			  <div class="mySlides">
+				<div class="numbertext">5 / 5</div>
+				<img src="images/Red Cross Hospital.jpg" style="width:80%">
+			  </div>
+				
+			  <a class="prev" onclick="plusSlides(-1)">❮</a>
+			  <a class="next" onclick="plusSlides(1)">❯</a>
+			
+			  <div class="caption-container">
+				<p id="caption"></p>
+			  </div>
+			
+			  <div class="row">
+				<div class="column">
+				  <img class="demo cursor" src="images/staff1.jpg" style="width:80%" onclick="currentSlide(1)" alt="Dont be afraid to volunteer">
+				</div>
+				<div class="column">
+				  <img class="demo cursor" src="images/staff2.jpg" style="width:80%" onclick="currentSlide(2)" alt="Save animals">
+				</div>
+				<div class="column">
+				  <img class="demo cursor" src="images/Donate1.jpg" style="width:90%" onclick="currentSlide(3)" alt="Help those in need">
+				</div>
+				<div class="column">
+				  <img class="demo cursor" src="images/staff4.jpg" style="width:80%"  onclick="currentSlide(4)" alt="Stand together">
+				</div>
+				<div class="column">
+				  <img class="demo cursor" src="images/Red Cross Hospital.jpg" style="width:100%" height="width:80%" onclick="currentSlide(5)" alt="Because">
+				</div>  
+			  </div>
+			</div>
+			
+			<script>
+			let slideIndex = 1;
+			showSlides(slideIndex);
+			
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
+			
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+			
+			function showSlides(n) {
+			  let i;
+			  let slides = document.getElementsByClassName("mySlides");
+			  let dots = document.getElementsByClassName("demo");
+			  let captionText = document.getElementById("caption");
+			  if (n > slides.length) {slideIndex = 1}
+			  if (n < 1) {slideIndex = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+    		slides[i].style.display = "none";  
+ 			 }
+ 			 slideIndex++;
+  			if (slideIndex > slides.length) {slideIndex = 1}    
+  			for (i = 0; i < dots.length; i++) {
+    		dots[i].className = dots[i].className.replace(" active", "");
+  			}
+  		slides[slideIndex-1].style.display = "block";  
+  		dots[slideIndex-1].className += " active";
+		  captionText.innerHTML = dots[slideIndex-1].alt;
+  		setTimeout(showSlides, 7000); 
+		}
+			</script>
+				
+			</body>
+		</html>
