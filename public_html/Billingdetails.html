@@ -1,29 +1,31 @@
-
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@800&family=Poppins:ital,wght@0,300;1,100&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya:wght@800&family=Poppins:ital,wght@0,300;1,100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src = "js animation"></script>
-  <title>Empowering the nation</title>
- 
-  <div class="wrapper">
-    <nav>
-        <ul>
-            <li><a href="Homepage.html"><i class="fa fa-home">Home page</a></li></i>
+    <script src="js animation"></script>
+    <title>Empowering the nation</title>
+
+    <div class="wrapper">
+        <nav>
+            <ul>
+                <li><a href="Homepage.html"><i class="fa fa-home">Home page</a></li></i>
 
 
-            <div class="dropdown">
-                <button onclick="mycourses()" class="dropbtn"><i class="fa fa-book"></i>Six-week courses</button>
-                <div id="courses" class="dropdown-content">
+                <div class="dropdown">
+                    <button onclick="mycourses()" class="dropbtn"><i class="fa fa-book"></i>Six-week courses</button>
+                    <div id="courses" class="dropdown-content">
                         <ul>
                             <li><a href="sub_menu/Child_Minding.html">Child Minding</a></li>
                             <li><a href="sub_menu/Cooking.html">Cooking</a></li>
@@ -31,64 +33,144 @@
                         </ul>
 
                     </div>
+                </div>
+                <div class="dropdown2">
+                    <button onclick="mycourses2()" class="dropbtn"><i class="fa fa-book"></i>Six-mounth courses</button>
+                    <div id="courses2" class="dropdown-content">
+                        <ul>
+                            <li><a href="sub_menu2/First_Aid.html">First Aid</a></li>
+                            <li><a href="sub_menu2/Sewing.html">Sewing</a></li>
+                            <li><a href="sub_menu2/Landscaping.html">Landscaping</a></li>
+                            <li><a href="sub_menu2/Life_Skills.html">Life Skills</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+
+                <li><a href="Billingdetails.html"><i class="fa fa-money"></i>Billing details</a></li>
+                <li><a href="Contact_us.html"><i class="fa fa-address-book"></i>Contact details</a></li>
+                <li><a href="Photo_gallery.html"><i class="fa fa-picture-o"></i>Photo gallery</a></li>
+
+            </ul>
+
+
+        </nav>
+        <!--end of nav bar-->
+    </div>
+
+<body>
+    <br>
+    <fieldset>
+        <form method="post" action="thanks.html">
+            <h3>Enter your details</h3>
+            <input type="text" name="name" placeholder="Name" required></br>
+            <input type="text" name="last_name" placeholder="Last Name" required></br>
+            <input type="tel" name="phone_number" placeholder="Phone number" required></br>
+            <input type="text" name="email" placeholder="Email address" required></br>
+            </br>
+            <h3>Select courses for purchase</h3>
+            <div id="selected_courses"></div>
+            <select id="course_selection" onchange="value_selected(this.value)">
+            </select>
+
+            </br>
+            </br>
+            <h3>Total amount due:</h3>
+            <!-- Horizontally centered div -->
+            <div style="display: flex; align-items: center; justify-content: center;">
+                <table style="border-collapse: collapse;">
+                    <tr style="outline: thin solid">
+                        <td>
+                            <h3 style="text-align: start;">Without VAT:</h3>
+                        </td>
+                        <td>
+                            <h3 id="total_amount"></h3>
+                        </td>
+                    </tr>
+                    <tr style="outline: thin solid">
+                        <td>
+                            <h3 style="text-align: start;">With VAT:</h3>
+                        </td>
+                        <td>
+                            <h3 id="total_amount_inc_vat"></h3>
+                        </td>
+                    </tr>
+                </table>
             </div>
-            <div class="dropdown2">
-                        <button onclick="mycourses2()" class="dropbtn"><i class="fa fa-book"></i>Six-mounth courses</button>
-                        <div id="courses2" class="dropdown-content">
-                                <ul>
-                                    <li><a href="sub_menu2/First_Aid.html">First Aid</a></li>
-                                    <li><a href="sub_menu2/Sewing.html">Sewing</a></li>
-                                    <li><a href="sub_menu2/Landscaping.html">Landscaping</a></li>
-                                    <li><a href="sub_menu2/Life_Skills.html">Life Skills</a></li>
-                                </ul>
-
-                            </div>
-                        </div>
-                            
-
-            <li><a href="Billingdetails.html"><i class="fa fa-money"></i>Billing details</a></li>
-            <li><a href="Contact_us.html"><i class="fa fa-address-book"></i>Contact details</a></li>
-            <li><a href="Photo_gallery.html"><i class="fa fa-picture-o"></i>Photo gallery</a></li>
-
-        </ul>
-
-
-    </nav><!--end of nav bar-->
-</div>
-  <body>
-<br>
-          <fieldset class ="fieldsethome2">
-           <h1><u>Child Minding</u></h1>
-           <div class = "principles">
-             <br>
-             Fees: R750
-             Purpose: To provide basic child and baby care
-             <br>
-             For more details click the link above:
-             <br>
-          </fieldset>
-             <fieldset class ="fieldsethome3">
-             <h1><u>Cooking</u></h1>
-             Fees: R750<br>
-             Purpose: To prepare and cook nutritious family meals
-             <br>
-             For more details click the link above:
-             
-             <br>         
-             <fieldset class ="fieldsethome3">
-             <h1><u>Garden Maintenance</u></h1>
-              Fees: R750<br>
-              Purpose: To provide basic knowledge of watering, pruning and planting in a domestic<br>
-              garden.
-              <br>
-              For more details click the link above:
-              <br>
-          </fieldset>
-              </div>
-              <br><br>
-          </fieldset>
-   <!-- <div>  
+            <input type="checkbox" value="consultant">Contact consultant</br>
+            <input type="submit" value="Submit">
+        </form>
+    </fieldset>
+    <!-- <div>  
 <img class = "workpic" src = "images/puppy.jpg" >
 </div> -->
-      </body>
+</body>
+<footer>
+    <script>
+        let all_courses = { "course_1": { name: "Course 1", price: 750 }, "course_2": { name: "Course 2", price: 750 }, "course_3": { name: "Course 3", price: 750 }, "course_4": { name: "Course 4", price: 1500 } };
+        let available_courses = { "course_1": { name: "Course 1", price: 750 }, "course_2": { name: "Course 2", price: 750 }, "course_3": { name: "Course 3", price: 750 }, "course_4": { name: "Course 4", price: 1500 } };
+        let total_amount = 0;
+
+        generate_courses(available_courses);
+        update_price(0);
+
+        function generate_courses(courses) {
+            let course_selection = document.getElementById("course_selection");
+            course_selection.innerHTML = "";
+            let option = document.createElement("option");
+            option.value = "null";
+            option.text = "Select courses";
+            option.selected = true;
+            course_selection.add(option);
+
+            let sorted = Object.entries(courses)
+                .sort(([key1, val1], [key2, val2]) => val1.name.localeCompare(val2.name))
+                .reduce(function (accSort, [key, val]) {
+                    accSort[key] = val;
+                    return accSort;
+                }, {});
+
+            for (let course in sorted) {
+                let option = document.createElement("option");
+                option.value = course;
+                option.text = sorted[course].name;
+                course_selection.appendChild(option);
+            }
+        }
+
+        function value_selected(value) {
+            if (value == "null") {
+                return;
+            }
+            delete available_courses[value];
+            generate_courses(available_courses);
+            let child = document.getElementById("selected_courses");
+            let new_child = document.createElement("div");
+            new_child.appendChild(document.createTextNode(all_courses[value].name));
+            let button = document.createElement("button");
+            button.innerText = "x";
+            update_price(all_courses[value].price);
+            button.onclick = function () {
+                available_courses[value] = all_courses[value];
+                generate_courses(available_courses);
+                child.removeChild(new_child);
+                update_price(-all_courses[value].price);
+            };
+            new_child.appendChild(button);
+            new_child.appendChild(document.createElement("br"));
+            child.appendChild(new_child);
+        }
+
+
+        function update_price(amount_change) {
+            total_amount += amount_change;
+            document.getElementById("total_amount").innerText = "R" + total_amount;
+
+            let vat = total_amount * 0.14;
+            document.getElementById("total_amount_inc_vat").innerText = "R" + (total_amount + vat);
+        }
+    </script>
+</footer>
+
 </html>
