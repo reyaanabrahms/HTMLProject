@@ -29,10 +29,10 @@ window.addEventListener('DOMContentLoaded' , ()=>{
 	})
 });
 
-Splitting();
-ScrollOut({
-   targets: '[data-splitting]'
-});//for logo animation
+// Splitting();
+// ScrollOut({
+//    targets: '[data-splitting]'
+// });//for logo animation
 
 let slideIndex = 1;
 showSlides(slideIndex);
