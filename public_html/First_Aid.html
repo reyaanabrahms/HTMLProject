@@ -1,80 +1,118 @@
 
 <html>
+    <!Documenttype.html>
     <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@800&family=Poppins:ital,wght@0,300;1,100&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@800&family=Poppins:ital,wght@0,300;1,100&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src = "js animation"></script>
-    <title>Empowering the nation</title>
-   
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Alegreya:wght@800&family=Poppins:ital,wght@0,300;1,100&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+            <link rel="stylesheet" href="css.css">
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"></script>
+    
+        <title>Empowering the nation</title>
+    
+        <style>
+    
+        </style>
+    </head>
+        
     <div class="wrapper">
         <nav>
-            <ul>
-                <li><a href="Homepage.html"><i class="fa fa-home">Home page</a></li></i>
+            <div class="container-fluid">
+                <div class="navbar-collapse offcanvas-collapse">
+                    <ul>
+                        <li><a href="Homepage.html"><i class="fa fa-home"></i>Home page</a></li>
     
-    
-                <div class="dropdown">
-                    <button onclick="mycourses()" class="dropbtn"><i class="fa fa-book"></i>Six-week courses</button>
-                    <div id="courses" class="dropdown-content">
-                            <ul>
-                                <li><a href="Child_Minding.html">Child Minding</a></li>
-                                <li><a href="Cooking.html">Cooking</a></li>
-                                <li><a href="Garden_Maintenance.html">Garden Maintenance</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false"><i
+                                    class="fa fa-book"></i>Six-week courses</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item"><a class="dropdown-item" href="Child_Minding.html">Child
+                                        Minding</a></li>
+                                <li class="dropdown-item"><a class="dropdown-item" href="Cooking.html">Cooking</a></li>
+                                <li class="dropdown-item"><a class="dropdown-item" href="Garden_Maintenance.html">Garden
+                                        Maintenance</a></li>
                             </ul>
+                        </li>
     
-                        </div>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false"><i
+                                    class="fa fa-book"></i>Six-mounth courses</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item"><a class="dropdown-item" href="First_Aid.html">First Aid</a></li>
+                                <li class="dropdown-item"><a class="dropdown-item" href="Sewing.html">Sewing</a></li>
+                                <li class="dropdown-item"><a class="dropdown-item" href="Landscaping.html">Landscaping</a>
+                                </li>
+                                <li class="dropdown-item"><a class="dropdown-item" href="Life_Skills.html">Life Skills</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="Billingdetails.html"><i class="fa fa-money"></i>Billing details</a></li>
+                        <li><a href="Contact_us.html"><i class="fa fa-address-book"></i>Contact details</a></li>
+                        <li><a href="photo_gallery.html"><i class="fa fa-picture-o"></i>Photo gallery</a></li>
+                        </li>
+                    </ul>
                 </div>
-                <div class="dropdown2">
-                            <button onclick="mycourses2()" class="dropbtn"><i class="fa fa-book"></i>Six-mounth courses</button>
-                            <div id="courses2" class="dropdown-content">
-                                    <ul>
-                                        <li><a href="First_Aid.html">First Aid</a></li>
-                                        <li><a href="Sewing.html">Sewing</a></li>
-                                        <li><a href="Landscaping.html">Landscaping</a></li>
-                                        <li><a href="Life_Skills.html">Life Skills</a></li>
-                                    </ul>
-    
-                                </div>
-                            </div>
-                                
-    
-                <li><a href="Billingdetails.html"><i class="fa fa-money"></i>Billing details</a></li>
-                <li><a href="Contact_us.html"><i class="fa fa-address-book"></i>Contact details</a></li>
-                <li><a href="Photo_gallery.html"><i class="fa fa-picture-o"></i>Photo gallery</a></li>
-    
-            </ul>
-    
-    
-        </nav><!--end of nav bar-->
+            </div>
+        </nav> <!--end of nav bar-->
     </div>
-        <body>
-            <br>
-                </div>
-                        <fieldset class ="fieldsethome2">
-                         <h2>First Aid</h2>
-                         <div class = "principles">
-                            <br>
-                            Fees: R1500
-                            <u>Purpose:</u>To provide first aid awareness and basic life support
-                            <br>
-                            <h3>Contents</h3>
-                            <ul><li>Wounds and bleeding</li></ul>
-                            <ul><li>Burns and fractures</li></ul>
-                            <ul><li>Emergency scene management</li></ul>
-                            <ul><li>Cardio-Pulmonary Resuscitation (CPR)</li></ul>
-                            <ul><li>Respiratory distress e.g., Choking, blocked airway</li></ul>
-                            <br>
-                          </div>
-                      </fieldset>
-                      <img src="images/aid1.jpg"  width="500" height="333"><img src="images/aid2.jpg"  width="500" height="333">
-                    </body>
+                    <br>
+                    <fieldset class="fieldsethome2">
+                        <table class="courses">
+                    <tr>
+                        <td>
+                            <div class="crop">
+                                <img src="images/aid1.jpg">
+                             </div> <!-- 1st img -->
+                        </td>
+                    
+                        <td>
+                            <div class="fs2">
+                                <div class="allcourses">
+                                    <h2 class="heading2">First Aid</h2>
+                                    <div class = "principles">
+                                       <br>
+                                       Fees: R1500
+                                       <u>Purpose:</u>To provide first aid awareness and basic life support
+                                       <br>
+                                       <h3 class="heading3">Contents</h3>
+                                       <ul><li>Wounds and bleeding</li></ul>
+                                       <ul><li>Burns and fractures</li></ul>
+                                       <ul><li>Emergency scene management</li></ul>
+                                       <ul><li>Cardio-Pulmonary Resuscitation (CPR)</li></ul>
+                                       <ul><li>Respiratory distress e.g., Choking, blocked airway</li></ul>
+                                       <br>
+                                     </div>
+                                 <br>
+                               </div>
+                                </div>
+                        </td>
+                    
+                        <td>
+                            <div class="crop">
+                                <img src="images/aid2.jpg">
+                            </div><!-- 2nd img -->
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+                        </body>
                                         
                                         <footer>
               <script src="js animation.js"></script>

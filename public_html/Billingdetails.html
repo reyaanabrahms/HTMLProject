@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,6 +18,7 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="css.css">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
@@ -63,21 +64,14 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="Billingdetails.html">Billing
-                            details</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="Contact_us.html">Contact details</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="Photo_gallery.html">Photo gallery</a>
+                    <li><a href="Billingdetails.html"><i class="fa fa-money"></i>Billing details</a></li>
+                    <li><a href="Contact_us.html"><i class="fa fa-address-book"></i>Contact details</a></li>
+                    <li><a href="photo_gallery.html"><i class="fa fa-picture-o"></i>Photo gallery</a></li>
                     </li>
                 </ul>
             </div>
         </div>
-    </nav>
-    <!--end of nav bar-->
+    </nav> <!--end of nav bar-->
 </div>
 
 <body>
@@ -129,8 +123,8 @@
 </body>
 <footer>
     <script>
-        let all_courses = { "course_1": { name: "Course 1", price: 750 }, "course_2": { name: "Course 2", price: 750 }, "course_3": { name: "Course 3", price: 750 }, "course_4": { name: "Course 4", price: 1500 } };
-        let available_courses = { "course_1": { name: "Course 1", price: 750 }, "course_2": { name: "Course 2", price: 750 }, "course_3": { name: "Course 3", price: 750 }, "course_4": { name: "Course 4", price: 1500 } };
+        let all_courses = { "course_1": { name: "Child Minding", price: 750 }, "course_2": { name: "Cooking", price: 750 }, "course_3": { name: "Garden Maintenance", price: 750 }, "course_4": { name: "First Aid", price: 1500 },"course_5": { name: "Sewing ", price: 1500 },"Landscaping": { name: "Life skills", price: 1500 }};
+        let available_courses = { "course_1": { name: "Child Minding", price: 750 }, "course_2": { name: "Cooking", price: 750 }, "course_3": { name: "Garden Maintenance", price: 750 }, "course_4": { name: "First Aid", price: 1500 },"course_5": { name: "Sewing ", price: 1500 },"Landscaping": { name: "Life skills", price: 1500 }}
         let total_amount = 0;
 
         generate_courses(available_courses);

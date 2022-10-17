@@ -22,7 +22,7 @@ body {
 
 } 
 
-.child_minding{
+.allcourses{
   transform: translate(0,50%);
 }
 
@@ -99,6 +99,10 @@ nav a:hover::before {
 
 margin-right: 50px;
 
+}
+
+.dropdown-item {
+  margin-left: 0dp;
 }
 
 .dropbtn {
@@ -260,7 +264,7 @@ img {
   width: auto;
   padding: 16px;
   margin-top: -50px;
-  color: white;
+  color: #0B4141;
   font-weight: bold;
   font-size: 50px;
   border-radius: 0 3px 3px 0;
@@ -275,33 +279,33 @@ img {
   width: auto;
   padding: 16px;
   margin-top: -50px;
-  color: white;
+  color: #0B4141;
   font-weight: bold;
   font-size: 50px;
-  border-radius: 0 3px 3px 0;
+  border-radius: 20%;
   user-select: none;
   -webkit-user-select: none;
 }
 
 
-.prev{
+/* .prev{
   left:0;
   border-radius: 3px 0 0 3px;
 }
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
-}
+} */
 
 
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #0B4141;
 }
 
 
 .numbertext {
-  color: #FAF0DC;
+  color: #FF6864;
   font-size: 20px;
   padding: 8px 12px;
   position: absolute;
@@ -311,9 +315,9 @@ img {
 
 .caption-container {
   text-align: center;
-  background-color: #222;
+  background-color: #0B4141;
   padding: 2px 16px;
-  color: white;
+  color: #FF6864;
 }
 
 .row:after {
@@ -323,7 +327,7 @@ img {
 }
 
 
-.column {
+.photocolumn {
   float: left;
   width: 16.66%;
 }
@@ -343,11 +347,11 @@ img {
   opacity: 1;
 }
 
-.column {
+/* .column {
   float: left;
   width: 33.33%;
   padding: 5px;
-}
+} */
 
 .tab {
   display: inline-block;
@@ -542,6 +546,20 @@ transform: translate(60%,-90%);
 
 }
 
+.crop{
+  width:353px;
+  height:700px;
+  overflow: hidden;
+}
+
+.crop img{
+  width:353px;
+  height:700px;
+  border-radius:30px;
+  object-fit: cover
+
+}
+
 .coursestable{
   border-style: none;
   border-collapse:collapse;
@@ -604,7 +622,7 @@ transform: translate(60%,-90%);
 }
 
 h1{
-  color: #CD001A;
+  color: #FF6864;
 }
 
 .slideshow-container {
@@ -624,7 +642,7 @@ h1{
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: #0B4141;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -632,10 +650,10 @@ h1{
   user-select: none;
 }
 
-.next {
+/* .next {
   right: 0;
   border-radius: 3px 0 0 3px;
-}
+} */
 
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
